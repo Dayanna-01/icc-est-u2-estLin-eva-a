@@ -1,7 +1,6 @@
 package main;
 
 import java.util.*;
-
 public class LogicaClasificacion {
 
     /**
@@ -10,13 +9,23 @@ public class LogicaClasificacion {
      * Ejemplo:
      * Entrada: ["Ana", "Luis", "Pedro"]
      * Salida: ["Pedro", "Luis", "Ana"]
-     *
+     * Simula la atención en orden FIFO (primero en entrar, primero en salir).
+
      * @param cola cola original de nombres
      * @return nueva cola con los nombres en orden invertido
      */
-    public Queue<String> invertirColaNombres(Queue<String> cola) {
+    public static Queue<String> invertirColaNombres(Queue<String> cola) {
+        Stack<String> pila = new Stack<>();
 
-        return new LinkedList<>(Arrays.asList()); // Simulación de resultado
+        while (!cola.isEmpty()) {
+            pila.push(cola.peek());
+        }
+        Queue<String> colaInvertida = new LinkedList<>();
+        while (!pila.isEmpty()) {
+            colaInvertida.add(pila.pop());
+            
+        }
+        return colaInvertida;
     }
 
     /**
@@ -32,6 +41,7 @@ public class LogicaClasificacion {
      * @return true si forman un palíndromo, false si no
      */
     public boolean verificarPalindromoCola(Queue<String> cola) {
+        Stack<String> entrada = new Stack<>();
 
         return false;
     }

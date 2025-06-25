@@ -9,7 +9,6 @@ public class LogicaClasificacion {
      * Ejemplo:
      * Entrada: ["Ana", "Luis", "Pedro"]
      * Salida: ["Pedro", "Luis", "Ana"]
-     * Simula la atención en orden FIFO (primero en entrar, primero en salir).
 
      * @param cola cola original de nombres
      * @return nueva cola con los nombres en orden invertido

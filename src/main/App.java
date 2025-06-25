@@ -15,16 +15,15 @@ public class App {
 
         // Ejercicio 1
         System.out.println("Ejercicio 1");
-        Queue<String>nombres = new LinkedList<>();
-                    nombres.add("Ana");
-                    nombres.add("Luis");
-                    nombres.add("Pedro");
+
+        Queue<String> nombres = new LinkedList<>();
+        nombres.add("Ana");
+        nombres.add("Luis");
+        nombres.add("Pedro");
+
         Queue<String> invertida = invertirColaNombres(nombres);
+
         System.out.println("Los nombres ya ingresados son: " + nombres);
-        System.out.println(invertida);
-
-        //Ejercicio 2
-        System.out.println("Ejercicio 2");
-
+        System.out.println("Cola invertida: " + invertida);
     }
 }

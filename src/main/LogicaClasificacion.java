@@ -17,14 +17,15 @@ public class LogicaClasificacion {
         Stack<String> pila = new Stack<>();
 
         while (!cola.isEmpty()) {
-            pila.push(cola.peek());
+            pila.push(cola.poll());
         }
-        Queue<String> colaInvertida = new LinkedList<>();
+
+        Queue<String> invertida = new LinkedList<>();
         while (!pila.isEmpty()) {
-            colaInvertida.add(pila.pop());
-            
+            invertida.add(pila.pop());
         }
-        return colaInvertida;
+
+        return invertida;
     }
 
     /**
